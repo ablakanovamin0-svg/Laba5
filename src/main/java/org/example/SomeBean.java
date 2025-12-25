@@ -1,5 +1,10 @@
 package org.example;
 
+/**
+ * Класс, содержащий объявление полей field1 и field2
+ * @author ablakanovamin0-svg
+ * @version 1.0
+ */
 public class SomeBean {
     @AutoInjectable
     private SomeInterface field1;

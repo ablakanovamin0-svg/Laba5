@@ -1,6 +1,5 @@
 package org.example;
 
-import javax.management.InstanceNotFoundException;
 import java.util.Properties;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,6 +8,14 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Field;
 
+/**
+ * Класс, реализующий поиск полей с
+ * созданной аннотацией и создание экземпляров
+ * классов, получая информацию из файла конфигурации
+ * @param <T> тип объекта
+ * @author ablakanovamin0-svg
+ * @version 1.0
+ */
 public class Injector<T> {
     public T inject(T object) {
         Properties properties = new Properties();
